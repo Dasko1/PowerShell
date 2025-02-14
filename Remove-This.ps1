@@ -9,4 +9,4 @@ $filePath = Join-Path -Path $folderPath -ChildPath $fileName
 Remove-Item -Path $filePath -Force
 
 # Output the result!
-Write-Host "File Removed: $filePath"
+Write-Host "`nFile Removed: $fileName`n"
