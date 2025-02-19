@@ -1,4 +1,4 @@
-# Define a variable, a number between 0 - 100.
+# Define a variable, a number between 0 - 100
 $randomNumber = Get-Random -Minimum 0 -Maximum 101
 
 # If-Else statement
