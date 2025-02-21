@@ -17,8 +17,10 @@ $fileStream.Close()
 Remove-Item -Path $filePath
 
 <#
-The file stream is opened using [System.IO.File]::Open.
-A StreamWriter object is created to write to the file.
-The StreamWriter writes a line to the file and flushes the buffer.
-Both the StreamWriter and the file stream are closed to release the resources.
+1. The file stream is opened using [System.IO.File]::Open (l.3).
+2. A StreamWriter object is created to write to the file (l.6).
+3. The StreamWriter writes a line to the file and flushes the buffer (l.7).
+4. Both the StreamWriter and the file stream are closed to release the resources (ll.11-12).
+5. The file is executed using the dot operator (l.14).
+6. The file is removed using Remove-Item (l.17). 
 #>
